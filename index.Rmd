@@ -1,0 +1,82 @@
+---
+title       : Miles per gallon Calculation
+subtitle    : 
+author      : Ammar raja
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Effect of Transmission, Gears and Cylinders on Miles Per Gallon(mpg)
+
+1. mtcars R dataset is used for getting the data.
+2. Input data includes Tranmission of the car i.e either automatic or manual.
+3. Number of cylinders used by the car.
+4. the effect of various gears on mpg.
+
+--- .class #id 
+
+## Slide 2
+
+## Effect of Transmission, Gears and Cylinders on Miles Per Gallon(mpg)
+
+This simple Shiny app gives miles per gallon for cylinders, transmission and gears.
+
+The user simply has to choose either cylinder or transmission or gears from the drop down menu.
+
+The app calculates and shows you a box plot of milesper gallon with the chossen variable.
+
+---
+
+## slide 3
+
+## Effect of Transmission, Gears and Cylinders on Miles Per Gallon(mpg)
+
+There is a tick box beneath the drop down menu.
+
+The caption of the tick box is "Show Outliers"
+
+The tick box is for finding the effects of outliers if any.
+
+---
+
+## slide 4
+
+## Effect of Transmission, Gears and Cylinders on Miles Per Gallon(mpg)
+
+If you choose Cylinders from the drop down menu
+
+You can clearly see in the bos plot that the more the number
+of cylinder, the less the mpg.
+```{r}
+plot(mtcars$cyl, mtcars$mpg, "l")
+```
+The following plot shows a negative relationship between the number of cylinders
+and mpg.
+
+---
+
+## slide 5
+
+## Effect of Transmission, Gears and Cylinders on Miles Per Gallon(mpg)
+
+If you choose transmission you can see that the automatic cars give
+less mpg as compared to manual cars.
+
+Finally, if you choose gears, you can see that the 4th gear gives the maximum 
+mileage, and the 3rd gives the least.
+
+So remember to use 4th gear more often to save on gasoline bill. 
+
+Cheerio
+
+---
+
+
+
+
+
